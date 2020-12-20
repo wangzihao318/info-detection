@@ -41,8 +41,7 @@ class get_cdn(object):
 
 
     def getrules(self):
-        rules_path='cname'
-        with open(f'{rules_path}/cname',encoding='utf-8') as f :
+        with open('cname',encoding='utf-8') as f :
              cname_rules=json.load(f)
              f.close()
         return  cname_rules
