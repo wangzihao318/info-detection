@@ -41,8 +41,7 @@ class get_cdn(object):
 
 
     def getrules(self):
-        path=os.getcwd()
-        rules_path=path+'/cdnrules'
+        rules_path='cname'
         with open(f'{rules_path}/cname',encoding='utf-8') as f :
              cname_rules=json.load(f)
              f.close()
